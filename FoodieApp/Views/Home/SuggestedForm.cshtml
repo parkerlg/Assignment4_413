@@ -1,8 +1,10 @@
-﻿@{
+@{
     ViewBag.Title = "Suggested Restaurant Form";
 }
 
 @model FoodieApp.Models.SuggestedRestaurants;
+
+<h3 class="m-3">Enter the information for a restaurant you would suggest to people new in Provo.</h3>
 
 <form asp-action="SuggestedForm" amethod="post" style="padding: 20px;">
     <div asp-validation-summary="All">
