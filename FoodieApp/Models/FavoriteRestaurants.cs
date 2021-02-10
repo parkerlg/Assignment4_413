@@ -6,9 +6,13 @@ namespace FoodieApp.Models
 {
     public class FavoriteRestaurants
     {
-        
+        public FavoriteRestaurants (int rank)
+        {
+            Rank = rank;
+        }
+
+
         [Required(ErrorMessage = "Rank Required")]
-        [ReadOnly(true)]
         public int Rank { get; set; }
         [Required(ErrorMessage ="Restaurant Name Required")]
         public string Name { get; set; }
@@ -27,9 +31,8 @@ namespace FoodieApp.Models
 
         public static FavoriteRestaurants[] GetFavRestaurants()
         {
-            FavoriteRestaurants r1 = new FavoriteRestaurants
+            FavoriteRestaurants r1 = new FavoriteRestaurants(1)
             {
-                Rank = 1,
                 Name = "R&R BBQ",
                 //FavDish = null, //"2 Meat Combo w/ Brisket and Pulled Pork",
                 Address = "4801 N University Ave #490, Provo, UT 84601",
@@ -37,9 +40,9 @@ namespace FoodieApp.Models
                 //Website = null
             };
 
-            FavoriteRestaurants r2 = new FavoriteRestaurants
+            FavoriteRestaurants r2 = new FavoriteRestaurants(2)
             {
-                Rank = 2,
+
                 Name = "Chick-Fil-A",
                 FavDish = "Chicken Deluxe Sandwich w/ PepperJack Cheese",
                 Address = "484 Bulldog Ln, Provo, UT 84604",
@@ -47,9 +50,9 @@ namespace FoodieApp.Models
                 Website = "chick-fil-a.com"
             };
 
-            FavoriteRestaurants r3 = new FavoriteRestaurants
+            FavoriteRestaurants r3 = new FavoriteRestaurants(3)
             {
-                Rank = 3,
+
                 Name = "Mooyah",
                 FavDish = "The Best Quesonario",
                 Address = "62 W 1230 N St Suite 105, Provo, UT",
@@ -57,9 +60,8 @@ namespace FoodieApp.Models
                 Website = "mooyah.com"
             };
 
-            FavoriteRestaurants r4 = new FavoriteRestaurants
+            FavoriteRestaurants r4 = new FavoriteRestaurants(4)
             {
-                Rank = 4,
                 Name = "Bumblebees KBBQ and Grill",
                 FavDish = "K-Pop Fries",
                 Address = "1254 N State St, Provo, UT",
@@ -67,7 +69,7 @@ namespace FoodieApp.Models
                 Website = "provo.bumblebeeskbbq.com"
             };
 
-            FavoriteRestaurants r5 = new FavoriteRestaurants
+            FavoriteRestaurants r5 = new FavoriteRestaurants(5)
             {
                 Rank = 5,
                 Name = "Wendy's",

@@ -1,10 +1,19 @@
 ﻿<Properties StartupConfiguration="{8DA368DB-2A0B-410D-98C4-F032F54C3413}|Default">
   <MonoDevelop.Ide.ItemProperties.FoodieApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="FoodieApp/Models/FavoriteRestaurants.cs">
+    <Files>
+      <File FileName="FoodieApp/Models/FavoriteRestaurants.cs" Line="9" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="FoodieApp" expanded="True" selected="True" />
+          <Node name="FoodieApp" expanded="True">
+            <Node name="FoodieApp" expanded="True">
+              <Node name="Models" expanded="True">
+                <Node name="FavoriteRestaurants.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
